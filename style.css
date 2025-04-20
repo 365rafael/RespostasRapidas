@@ -1,0 +1,163 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e comum */
+    background-color: #f0f2f5; /* Tom de fundo mais suave, comum em interfaces modernas */
+    margin: 0; /* Remove margens padrão do body */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo na horizontal */
+    align-items: center; /* Centraliza o conteúdo na vertical (para ocupar toda a tela, ajuste conforme necessário) */
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da viewport */
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px; /* Aumenta o espaçamento interno */
+    border-radius: 12px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra mais sutil e moderna */
+    width: 90%; /* Largura responsiva */
+    max-width: 600px; /* Largura máxima para não esticar demais em telas grandes */
+}
+
+h1, h2 {
+    color: #2c3e50; /* Cor de texto mais moderna e escura */
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 500; /* Peso da fonte um pouco mais leve */
+}
+
+.add-response {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.add-response h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.add-response label {
+    display: block;
+    margin-bottom: 8px;
+    color: #34495e; /* Cor de texto para labels */
+    font-weight: bold;
+}
+
+.add-response input[type="text"],
+.add-response textarea {
+    width: calc(100% - 16px); /* Ajusta a largura considerando o padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Borda mais clara */
+    border-radius: 6px; /* Bordas mais arredondadas para inputs */
+    box-sizing: border-box;
+    font-size: 16px; /* Tamanho de fonte um pouco maior para melhor leitura */
+}
+
+.add-response input[type="text"]:focus,
+.add-response textarea:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    border-color: #3498db; /* Cor da borda ao receber foco */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Adiciona uma leve sombra ao foco */
+}
+
+.add-response button {
+    background-color: #3498db; /* Cor primária mais moderna */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px; /* Bordas mais arredondadas para o botão */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out; /* Transição suave para o hover */
+}
+
+.add-response button:hover {
+    background-color: #2980b9; /* Cor um pouco mais escura no hover */
+}
+
+.responses-list h2 {
+    margin-top: 30px;
+}
+
+.response-item {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Sombra suave para os itens */
+}
+
+.response-item p {
+    margin: 0;
+    flex-grow: 1;
+    margin-right: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.response-item button {
+    background-color: #2ecc71; /* Cor de sucesso/ação positiva */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.response-item button:hover {
+    background-color: #27ae60;
+}
+
+.response-item .category-keyword {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.filter-responses {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-responses label {
+    margin-right: 10px;
+    color: #34495e;
+    font-weight: bold;
+}
+
+.filter-responses input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.filter-responses input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.title-container {
+    display: flex; /* Alinha os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza o título e o ícone */
+    margin-bottom: 25px; /* Espaçamento abaixo do título */
+}
+
+.icon {
+    width: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    margin-left: 15px; /* Espaçamento entre o título e o ícone */
+}

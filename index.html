@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Respostas Rápidas WhatsApp Web</title>
+
+    <!-- Favicon e ícones para dispositivos móveis -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" sizes="16x16">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="favicon.ico" sizes="96x96">
+    <link rel="icon" href="favicon.ico" sizes="192x192">
+    <link rel="icon" href="favicon.ico" sizes="512x512">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>Organizador de Respostas Rápidas</h1>
+            <img src="favicon.ico" alt="Ícone do aplicativo" class="icon">
+        </div>
+
+        <div class="add-response">
+            <h2>Adicionar Nova Resposta</h2>
+            <label for="category">Categoria (Opcional):</label>
+            <input type="text" id="category" placeholder="Ex: Saudações, Suporte">
+
+            <label for="keyword">Palavra-chave (Opcional):</label>
+            <input type="text" id="keyword" placeholder="Ex: Olá, Problema, Pagamento">
+
+            <label for="response">Resposta Rápida:</label>
+            <textarea id="response" rows="4" placeholder="Digite sua resposta rápida aqui"></textarea>
+
+            <button id="addBtn">Adicionar</button>
+        </div>
+
+        <div class="responses-list">
+            <h2>Suas Respostas Salvas</h2>
+            <div class="filter-responses">
+                <label for="filter">Filtrar Respostas:</label>
+                <input type="text" id="filter" placeholder="Digite para filtrar por texto, categoria ou palavra-chave">
+            </div>
+            <div id="responsesContainer">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
