@@ -22,7 +22,11 @@ RespostasRapidas/
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
-  
+
+## Link
+
+Link: https://365rafael.github.io/RespostasRapidas/ 
+
 ## 🚀 Como usar
 
 **Clone o repositório:**
@@ -30,5 +34,4 @@ RespostasRapidas/
    git clone https://github.com/365rafael/RespostasRapidas.git
 
 
-Link: https://365rafael.github.io/RespostasRapidas/ 
 
